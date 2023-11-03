@@ -7,3 +7,18 @@ body {
     height: 100vh;
     background-color:#343a40;
 }
+#sidebar li.active {
+    background: #daa0a0;
+    border-radius: 8px;
+    text-decoration: none;
+}
+#sidebar li.active a, #sidebar li.active a:hover {
+    color: #000;
+ }
+#sidebar li a{
+    color: #fff;
+ }
+
+ hr.h-color {
+    color: #daa0a0;
+ }
