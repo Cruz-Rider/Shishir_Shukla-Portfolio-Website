@@ -5,165 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shishir Shukla - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
   </head>
   <body class="container-fluid">
-    <!-- Navigation Bar -->
+    <div class="row">
+      <nav id="navbar" class="navbar fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white mx-1" href="#">
+            <img src="Media/Profile Pic.gif" alt="Profile Image" width="50" height="50" class="img-fluid d-inline-block align-text-center rounded-circle">
+            SHISHIR SHUKLA
+          </a>
+        </div>
+      </nav>
+    </div>
     <div class="row"> 
-    <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
-      <div id="home">
-        <div class="profile_name">
-          Shishir Shukla
-          <div class="contact_info">
-            <img src="Media/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          1999shishirshukla@gmail.com
-          </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="Media/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +91-8303031514
+      <nav id="sidebar" class="col-2 col-lg-2 position-fixed">
+        <div class="position-sticky">
+          <ul class="nav nav-fill flex-column">
+              <li class="nav-item mt-2 md-1">
+                <a class="nav-link active align-text-center" href="#">
+                  <img src="Media/real-estate_2185922.png" alt="Home Icon" width="20%" height="20%" class="img-fluid">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item my-1">
+                <a class="nav-link active" href="#heading1">
+                  <img src="Media/information-sign_2343172.png" alt="Home Icon" width="20%" height="20%" class="img-fluid">
+                  About
+                </a>
+              </li>
+              <li class="nav-item my-1">
+                <a class="nav-link active" href="#heading2">
+                  <img src="Media/manager_2216715.png" alt="Home Icon" width="20%" height="20%" class="img-fluid">
+                  Skills
+                </a>
+              </li>
+              <li class="nav-item my-1">
+                <a class="nav-link active" href="#heading3">
+                  <img src="Media/real-estate_2185922.png" alt="Home Icon" width="20%" height="20%" class="img-fluid">
+                  Projects
+                </a>
+              </li>
+              <li class="nav-item my-1">
+                <a class="nav-link active" href="#heading4">
+                  <img src="Media/real-estate_2185922.png" alt="Home Icon" width="20%" height="20%" class="img-fluid">
+                  Recommendations
+                </a>
+              </li>
+          </ul>
+        </div> 
+      </nav>
+
+      <main role="main" class="col-10 col-lg-10" style="margin-left: 15rem;">
+        <div data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+          <h1 id="heading1">About Me</h1>
+          <h1 id="heading2">Skills</h1>
+          <h1 id="heading3">Projects</h1>
+          <h1 id="heading4">Recommendations</h1>
         </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-
-        </div>
-      </div>    
-    </nav>
-    </div>
-
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
-      </div>
-
-      <div>
-          <h1>
-            Hi, I'm Jane Doe! <img src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width="60px"/>
-          </h1>
-          <p>
-            I am a full stack developer with 2 years of experience in both application and presentation layers.
-            I have worked on applications and microservices deployed on IBM Cloud. 
-            I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
-          </p>
-      </div>
-    </section>
-              
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
-
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/html5.png"/>
-          <h6>HTML</h6>
-          <p>2 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg"/>
-          <h6>JavaScript</h6>
-          <p>3 years experience</p>
-        </div>  
-
-        <!-- Add more skills here -->
-
-
-      </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>Chatbot</h3>
-            <ul>
-              <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>Sentiment Analyzer</h3>
-            <ul>
-              <li>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>Fashion Website</h3>
-            <ul>
-              <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
-            </ul>
-          </div>
-    </div>
-    </section>
-    <div style="clear:both;"></div>
-
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Jane is a very quick learner and quickly grasps key concepts of Web development. 
-          She got a great attitude & she is an excellent team player. 
-          She has a curious mind and asks the right question. 
-          She takes initiative within a team and has potentials to lead the team.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Working with Jane has been an awesome experience. 
-          She is highly knowledgable and always goes the extra step to make sure everything is right. 
-          For any future projects that need her expertise I would definitely want to work with her again.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          I had worked along with Jane during the initial phase of our venture which needed Web development. 
-          She is a committed resource who has in depth knowledge about the domain. 
-          She will be an asset for any organisation! 
-          <span>&#8221;</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
-        </fieldset>
-      </div>
-    </section>
-
-    <div class="iconbutton">
-      <a href="#home">
-        <!--Add the code here for the logo to appear and the icon to be actionable-->
-      </a>
-    </div>
-
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3><!-- Add appropriate text here--></h3>
-      <button onclick="showPopup(false)">Ok</button>
+      </main>
     </div>
   </body>
 </html>
