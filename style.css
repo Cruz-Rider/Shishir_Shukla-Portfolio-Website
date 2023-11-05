@@ -3,9 +3,19 @@ body {
   padding-top: 70px;
 }
 
+#cover {
+    background-image: url(https://img.freepik.com/free-vector/elegant-gradient-modern-background_1055-401.jpg?w=740&t=st=1699186450~exp=1699187050~hmac=02696b002c4e5c84570baf7e5fb595d1b54f5ca6eafcd727e1beadaf7bd789e8); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    backdrop-filter: blur(50px);
+    backdrop-filter: opacity(0.5);
+}
+
 #sidebar{
     height: 100vh;
     background-color:#343a40;
+    backdrop-filter: blur(10px);
+    backdrop-filter: opacity(0.5);
 }
 #sidebar li.active {
     background: #daa0a0;
@@ -21,4 +31,8 @@ body {
 
  hr.h-color {
     color: #daa0a0;
+ }
+
+ main {
+    position: relative;
  }
