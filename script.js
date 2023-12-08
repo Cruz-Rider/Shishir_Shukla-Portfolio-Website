@@ -16,3 +16,14 @@ $("#dark_mode").on('click', function () {
   $(this).toggleClass('d-none');
   $("#light_mode").toggleClass('d-none');
 });
+
+$(document).ready(function () {
+  $('#toggleSidebar').on('click', function () {
+    $('#sidebar').toggleClass('d-none');
+  });
+
+  // Add additional logic if you want to close the sidebar when clicking outside
+  // $('#main-content').on('click', function () {
+  //   $('#sidebar').addClass('d-none');
+  // });
+});

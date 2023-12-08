@@ -9,13 +9,13 @@ body {
     background-size: cover;
     backdrop-filter: blur(50px);
     backdrop-filter: opacity(0.5);
+    align-items: center;
 }
 
 #sidebar{
-    height: 100vh;
+    height: 100;
     background-color:#343a40;
-    backdrop-filter: blur(10px);
-    backdrop-filter: opacity(0.5);
+    z-index: 99;
 }
 #sidebar li.active {
     background: #daa0a0;
@@ -35,4 +35,8 @@ body {
 
  main {
     position: relative;
+ }
+
+ .cards {
+    backdrop-filter: drop-shadow(5px 5px 15px rgba(255, 255, 255, 0.5));
  }
