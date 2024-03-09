@@ -27,3 +27,15 @@ $(document).ready(function () {
   //   $('#sidebar').addClass('d-none');
   // });
 });
+
+$(document).ready(function() {
+  $('#theme_switch').change(function() {
+    if ($(this).is(':checked')) {
+      $('#light_mode').removeClass('d-none');
+      $('#dark_mode').addClass('d-none');
+    } else {
+      $('#light_mode').addClass('d-none');
+      $('#dark_mode').removeClass('d-none');
+    }
+  });
+});

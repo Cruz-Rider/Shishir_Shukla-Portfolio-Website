@@ -5,17 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shishir Shukla - Portfolio</title>
+    <link rel="shortcut icon" href="Media/favicon/1.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./style.css">
   </head>
 
-  <body class="container-fluid"> <!-- Main Wrapper -->
-    <nav id="navbar" class="navbar fixed-top">
-      <button type="button" class="btn d-md-none" id="toggleSidebar">
+  <!-- Main Wrapper -->
+  <body class="container-fluid"> 
+    <!--Navbar-->
+    <nav id="navbar" class="navbar fixed-top border-bottom border-body bg-dark">
+      <button type="button" class="btn d-md-none align" id="toggleSidebar">
         <i class="material-symbols-outlined">menu</i>
       </button>
+      <a href="#" class="navbar-brand mx-4">
+        <img src="Media/favicon/1.png" alt="SS" width="30" height="30">
+      </a>
+      <button class="btn btn-success mx-2 d-none d-md-flex">Contact Me
+        <span class="material-symbols-outlined">person_pin_circle</span>
+      </button>
     </nav>
+
     <div class="row">
       <!--Side Bar--> 
       <aside id="sidebar" class="d-md-flex d-none col-md-2 position-fixed m-2 rounded-4">
@@ -53,72 +63,70 @@
               </li>
           </ul>
           <hr class="h-color mx-2">
-          <ul class="nav flex-column">
-            <li class="nav-item my-1">
-              <div class="form-check form-switch form-check-reverse">
-                <i class="material-symbols-outlined">dark_mode</i>
-                <input class="form-check-input" type="checkbox" role="switch" id="theme">
-              </div>
-            </li>
-          </ul>
           <ul class="nav flex-column" id="sidebar_list">
             <li class="nav-item my-1">
-              <button type="button" class="btn" id="light_mode">
-                <i class="material-symbols-outlined">light_mode</i>
-                Light Mode
-              </button>
-              <button type="button" class="btn d-none" id="dark_mode">
-                <i class="material-symbols-outlined">dark_mode</i>
-                Dark Mode
-              </button>
+              <div class="form-check form-switch form-check-reverse">
+                <input type="checkbox" name="theme_switch" id="theme_switch" role="switch" class="form-check-input">
+                <label for="theme_switch" class="form-check-label">
+                  <button type="button" class="btn" id="light_mode">
+                    <i class="material-symbols-outlined">light_mode</i>
+                      Light Mode
+                  </button>
+                  <button type="button" class="btn d-none" id="dark_mode">
+                    <i class="material-symbols-outlined">dark_mode</i>
+                      Dark Mode
+                  </button>
+                </label>
+              </div>
             </li>
           </ul>
         </div> 
       </aside>
+
       <!--Main Area-->
       <div class="d-block col-md-10" style="margin-left: auto;">
-          <!--Cover-->
-          <div class="container-fluid">
-            <div class="card" id="cover">
-              <img src="Media/Profile Pic.gif" alt="Profile Image" width="100" height="100" class="img-fluid d-inline-block rounded-circle">
-                <h1>SHISHIR SHUKLA</h1>
-                <h4>@Cruz_Rider</h4>
-            </div>
+        <!--Cover-->
+        <div class="container-fluid">
+          <div class="card" id="cover">
+            <img src="Media/Profile Pic.gif" alt="Profile Image" width="100" height="100" class="img-fluid d-inline-block rounded-circle">
+              <h1>SHISHIR SHUKLA</h1>
+              <h4>@Cruz_Rider</h4>
           </div>
+        </div>
           
-          <!--About Me-->
-          <div class="container-fluid" id="about_me">
-            <div class="card bg-secondary text-white mt-4">
-              <div class="card-body">
-                <div class="card-title"><h1><strong>About Me</strong></h1></div>
-                <div class="card-text">Adaptable and ambitious Full Stack Software Developer with a strong foundation in mechanical engineering. 
-                                      Proficient in a wide range of technologies including full-stack development, cloud computing, and data analytics. 
-                                      Skilled in problem-solving, data analysis, and algorithm design. 
-                                      Adept at collaborating in cross-functional teams and leveraging programming languages like Python and JavaScript to develop innovative solutions. 
-                                      Committed to continuous learning and staying updated with the latest industry trends.
-                </div>
+        <!--About Me-->
+        <div class="container-fluid" id="about_me">
+          <div class="card bg-secondary text-white mt-4">
+            <div class="card-body">
+              <div class="card-title"><h1><strong>About Me</strong></h1></div>
+              <div class="card-text">Adaptable and ambitious Full Stack Software Developer with a strong foundation in mechanical engineering. 
+                                    Proficient in a wide range of technologies including full-stack development, cloud computing, and data analytics. 
+                                    Skilled in problem-solving, data analysis, and algorithm design. 
+                                    Adept at collaborating in cross-functional teams and leveraging programming languages like Python and JavaScript to develop innovative solutions. 
+                                    Committed to continuous learning and staying updated with the latest industry trends.
               </div>
             </div>
           </div>
+        </div>
 
-          <hr class="h-color">
+        <hr class="h-color">
 
-            <!--Projects-->
-            <div class="container-fluid" id="projects">
-              <h1>Projects</h1>
-              <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-2">
-                <div class="col">
-                  <div class="card">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="Media/car_dealership.jpeg" class="img-fluid rounded-start" alt="car_dealership_review_app">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Car Dealership Review Application</h5>
-                          <p class="card-text"></p>
-                        </div>
-                      </div>
+        <!--Projects-->
+        <div class="container-fluid" id="projects">
+          <h1>Projects</h1>
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-2">
+            <div class="col">
+              <div class="card">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Media/car_dealership.jpeg" class="img-fluid rounded-start" alt="car_dealership_review_app">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Car Dealership Review Application</h5>
+                      <p class="card-text"></p>
+                    </div>
+                  </div>
                     </div>
                   </div>
                 </div>
